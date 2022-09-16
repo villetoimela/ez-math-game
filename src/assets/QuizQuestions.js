@@ -1,4 +1,4 @@
-export const quizQuestions = (
+const quizQuestions = (
     userSelectedOperatorsParams,
     userSelectedQuestionCount,
     userSelectedRandomRange,
@@ -12,7 +12,7 @@ export const quizQuestions = (
 
         let randomNumberOne = Math.ceil(Math.random() * userSelectedRandomRange);
         let randomNumberTwo = Math.ceil(Math.random() * userSelectedRandomRange);
-        let operator = operators[Math.floor(Math.random() * operators.lenght)];
+        let operator = operators[Math.floor(Math.random() * operators.length)];
 
         let mathQuiz = randomNumberOne + operator + randomNumberTwo;
 
@@ -25,3 +25,4 @@ export const quizQuestions = (
     return questions;
 };
 
+export default quizQuestions
