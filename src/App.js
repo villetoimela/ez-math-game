@@ -1,8 +1,13 @@
-
+import QuizContainer from "./components/QuizContainer";
+import "./index.css";
 
 function App() {
   return (
-    <div className="text-6xl text-red-400 flex items-center justify-center h-screen">TEST</div>
+    <div className="flex flex-row min-h-screen ">
+      <div className="flex justify-center items-center w-full">
+        <QuizContainer />
+      </div>
+    </div>
   );
 }
 
