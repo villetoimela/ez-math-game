@@ -116,7 +116,7 @@ const StartScreen = ({ onUserChoiceSubmitted }) => {
                     ))}
                 </div>
                 <div className="w-auto text-center rounded-xl text-xl font-bold py-4 bg-gray-800 cursor-pointer">
-                    <button className="uppercase text-white">Aloita</button>
+                    <button className="uppercase w-full text-white">Aloita</button>
                 </div>
             </form>
         </div >
