@@ -6,8 +6,9 @@ const EndScreen = ({ gameScore, questionCount, allQuestionWithAnswer }) => {
     }
     return (
         <div className="flex flex-col h-auto w-screen pb-20 sm:w-[50vh] bg-gradient-to-tr from-green-200 via-green-300 to-blue-300 px-3  border-xl">
-            <div className="flex mt-10 justify-center items-center text-2xl font-bold sticky rounded border-2 py-6 border-cyan-400 mb-2 bg-white shadow-2xl top-0 z-1000 ">
+            <div className="flex-col text-center mt-10 justify-center items-center text-2xl font-bold sticky rounded border-2 py-6 border-cyan-400 mb-2 bg-white shadow-2xl top-0 z-1000 ">
                 Sait oikein: {gameScore} / {questionCount}
+                {gameScore === questionCount ? <h3 className=" text-lg italic">Loistavaa!</h3> : <h3 className="text-lg italic">Sinulla on vielä petrattavaa!</h3>}
             </div>
             {allQuestionWithAnswer?.map((list, i) => (
                 <div key={i} className="flex flex-col w-full shadow-2xl bg-white rounded my-3">

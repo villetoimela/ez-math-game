@@ -6,7 +6,7 @@ import quizQuestions from "../assets/QuizQuestions";
 
 
 
-const QuizContainer = ({ quizName }) => {
+const QuizContainer = ({ }) => {
     const [gameStage, setGameStage] = useState("start");
     const [gameScore, setGameScore] = useState(0);
     const [questions, setQuestions] = useState([]);
@@ -66,7 +66,6 @@ const QuizContainer = ({ quizName }) => {
         <div>
             {gameStage === "start" && (
                 <StartScreen
-                    quizName={quizName}
                     onUserChoiceSubmitted={onUserChoiceSubmitted}
                 />
             )}
