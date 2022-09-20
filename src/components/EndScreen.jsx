@@ -1,6 +1,11 @@
 import React from 'react'
+import { useState } from 'react'
+import StartScreen from './StartScreen'
 
 const EndScreen = ({ gameScore, questionCount, allQuestionWithAnswer }) => {
+    function refreshPage() {
+        window.location.reload(false);
+    }
     return (
         <div className="flex flex-col h-auto w-screen pb-20 sm:w-[50vh] bg-gradient-to-tr from-green-200 via-green-300 to-blue-300 px-3  border-xl">
             <div className="flex mt-10 justify-center items-center text-2xl font-bold sticky rounded border-2 py-6 border-cyan-400 mb-2 bg-white shadow-2xl top-0 z-1000 ">
@@ -24,6 +29,9 @@ const EndScreen = ({ gameScore, questionCount, allQuestionWithAnswer }) => {
                 </div>
             ))
             }
+            <div className="w-auto text-center rounded-xl text-xl font-bold py-4 bg-gray-800 cursor-pointer mt-20">
+                <button onClick={refreshPage} className="uppercase w-full text-white">Uudestaan</button>
+            </div>
         </div >
     )
 }
