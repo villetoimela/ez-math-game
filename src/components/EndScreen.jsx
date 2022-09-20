@@ -1,6 +1,4 @@
 import React from 'react'
-import { useState } from 'react'
-import StartScreen from './StartScreen'
 
 const EndScreen = ({ gameScore, questionCount, allQuestionWithAnswer }) => {
     function refreshPage() {
