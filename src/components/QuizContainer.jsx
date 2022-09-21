@@ -6,7 +6,7 @@ import quizQuestions from "../assets/QuizQuestions";
 
 
 
-const QuizContainer = ({ }) => {
+const QuizContainer = () => {
     const [gameStage, setGameStage] = useState("start");
     const [gameScore, setGameScore] = useState(0);
     const [questions, setQuestions] = useState([]);
