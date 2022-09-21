@@ -1,3 +1,4 @@
+/* eslint no-eval: 0 */
 const quizQuestions = (
     userSelectedOperatorsParams,
     userSelectedQuestionCount,
