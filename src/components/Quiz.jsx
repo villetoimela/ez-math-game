@@ -29,7 +29,7 @@ const Quiz = ({
         setCurrentQuestionNumber(
             (currentQuestionNumber) => currentQuestionNumber + 1
         );
-        if (correctAnswer === userAnswer || correctAnswer === null) {
+        if (Number(correctAnswer) === Number(userAnswer)) {
             changeGameScore(1);
             questionWithAnswerFunction(currentQuestion, correctAnswer, true);
             return;
@@ -41,7 +41,7 @@ const Quiz = ({
     const finishQuiz = (e) => {
         e.preventDefault();
         changeGameStage("finish");
-        if (correctAnswer === userAnswer || correctAnswer === null) {
+        if (Number(correctAnswer) === Number(userAnswer)) {
             changeGameScore(1);
             questionWithAnswerFunction(currentQuestion, correctAnswer, true);
             return;
